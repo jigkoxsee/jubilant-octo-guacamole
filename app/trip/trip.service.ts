@@ -4,12 +4,12 @@ import 'rxjs/add/operator/map';
 
 
 @Injectable()
-export class MapService {
+export class TripService {
   dir :any;
   constructor(private http: Http) { }
 
   getDirection() {
-    return this.http.get('app/direction.json').map((res:Response) => res.json());
+    return this.http.get('app/trip.json').map((res:Response) => res.json());
   }
   
 }
