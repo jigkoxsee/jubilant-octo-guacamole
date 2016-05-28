@@ -7,7 +7,6 @@ import {MapComponent} from './map/map.component';
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-    <alert type="info">Hello from ng2-bootstrap  {{ date.toDateString() }}</alert>
     <div *ngFor="let place of trip">{{place.place}}</div>
     <lpd-map></lpd-map>
     `,
